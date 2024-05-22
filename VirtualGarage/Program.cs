@@ -41,6 +41,7 @@
                 int i = Convert.ToInt32(userInput);
                 Console.Clear();
                 Console.WriteLine($"{Garage[i].Brand} {Garage[i].Model} {Garage[i].Year} has been removed from your Garage. Press any key to continue");
+                Console.ReadKey(true);
                 Garage.RemoveAt(i);
             }
 
